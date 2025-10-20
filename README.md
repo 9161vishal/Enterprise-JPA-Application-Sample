@@ -50,14 +50,14 @@ src/
 
 ## Key Classes & Repositories (Major Functionalities)
 
-#### UserService
+### UserService
 Handles user-centric operations.
 - User deletion and address management.
 - Wishlist add/remove functionality.
 - Dynamic queries (find by email, find all with EntityGraph for eager fetch).
 - Profile association and transactional boundaries.
 
-#### ProductService
+### ProductService
 Central for product management.
 - Dynamic queries using Example entity, ExampleMatcher, and null value handling.
 - Criteria API usage for advanced queries.
@@ -65,23 +65,23 @@ Central for product management.
 - Paging, sorting, and aggregation (count, grouped queries).
 - Data projection into DTOs (interface and class-based).
 
-#### ProfileService
+### ProfileService
 Serves user profile features.
 - Fetch based on loyalty points.
 - Profiles retrieval and custom DTO mapping.
 - Sorted fetches and stream-based post-processing.
 
-#### ProductRepository & UserRepository
+### ProductRepository & UserRepository
 Spring Data JPA repositories with enhanced custom methods.
 - Finders by price, category, and user attributes.
 - JPQL and criteria queries.
 - Support for projection and join queries.
 
-#### ProductSpecification (and specifications package)
+### ProductSpecification (and specifications package)
 Contains ready-to-use Specification predicates for complex search.
 - `hasName`, `lessThanOrEqualTo`, `greaterThanOrEqualTo` for flexible filtering.
 
-#### DTOs Package
+### DTOs Package
 Defines projection interfaces/classes for efficient data transfer and presentation, decoupling entities from API/service contracts.
 
 ---
